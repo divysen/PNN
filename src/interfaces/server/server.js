@@ -5,4 +5,4 @@ import * as Express from "express";
 
 const Server = Express();
 
-export default Server;
+export { Server };

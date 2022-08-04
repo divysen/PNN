@@ -1,4 +1,4 @@
-export const schema = {
+const schema = {
 	"title": "property-details",
 	"description": "property detail record of pnn",
 	"type":"object",
@@ -47,3 +47,5 @@ export const schema = {
 	"required":["_id", "NIC_Code", "ComputerCode","Owner_Name","AddressLine1","ZoneId","WardId","LocaityId"],
 	"additionalProperties": false
 };
+
+export { schema };

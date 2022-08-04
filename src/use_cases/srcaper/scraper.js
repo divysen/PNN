@@ -20,9 +20,9 @@ async function getPageHtml( url ){
 		return html;
 	}
 	catch(e){
-		console.error("Error while scraping webpage ->\n"+ e);
+		console.error("Error while scraping webpage ->\n", e);
 		return "";
 	}
 }
 
-export default getPageHtml;
+export { getPageHtml };

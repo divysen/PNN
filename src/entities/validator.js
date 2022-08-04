@@ -10,7 +10,7 @@ import formatsPlugin from "ajv-formats";
  * @param {object} schema - entity schema
  * @returns {boolean} true/false: whether validation succeeded or not
  */
-export function validator(object, schema){
+function validator(object, schema){
 	let isValid = false;
 	try{
 		const ajv = new Ajv({ allErrors: true, strict: "log" });
@@ -28,3 +28,5 @@ export function validator(object, schema){
 		return isValid;
 	}
 }
+
+export { validator };
